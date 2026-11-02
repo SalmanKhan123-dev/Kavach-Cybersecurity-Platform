@@ -103,6 +103,37 @@ const translations = {
       start: "Start Challenge",
       fullAssessment: "Start Full Assessment",
     },
+
+    chatbot: {
+      badge: "AI SECURITY ASSISTANT",
+      title: "Kavach AI Security Assistant",
+      subtitle:
+        "Ask cybersecurity questions, analyze suspicious emails, or practice threat scenarios powered by our 1M-parameter local neural engine.",
+      chatTab: "AI Security Chat",
+      analyzerTab: "Phishing Inspector",
+      newChat: "New Chat",
+      onlineBadge: "1.34M PARAMS • OFFLINE AI",
+      engineActive: "Local Neural Engine Online",
+      engineOffline: "Local Engine Offline (Run 'py app.py')",
+      inputPlaceholder: "Ask any cybersecurity question, or paste an email snippet...",
+      inspectorPlaceholder: "Paste suspicious email body, headers, or SMS text here to inspect for threat indicators...",
+      analyzeBtn: "Analyze Threat",
+      riskScore: "Risk Assessment Score",
+      detectedRedFlags: "Detected Red Flags and Threat Indicators",
+      verdict: "Verdict and Security Advice",
+      noFlags: "No obvious phishing red flags detected. Always verify unexpected payment or login requests.",
+      copy: "Copy",
+      copied: "Copied!",
+      tryQuiz: "Practice Cyber Quiz",
+      quickPrompts: [
+        { label: "Spot Phishing Email", text: "How do I recognize a phishing email and what are the major red flags?" },
+        { label: "Clicked Suspicious Link!", text: "I clicked a suspicious link and typed my password what do I do?" },
+        { label: "UPI PIN Safety Rules", text: "What are the rules regarding UPI PIN and receiving money?" },
+        { label: "Start Cyber Quiz", text: "quiz" },
+        { label: "Passkeys and MFA Guide", text: "How do passkeys and multi-factor authentication protect my accounts?" }
+      ]
+    },
+
   },
 
   hi: {
@@ -213,6 +244,37 @@ const translations = {
       start: "चुनौती शुरू करें",
       fullAssessment: "पूरा मूल्यांकन शुरू करें",
     },
+
+    chatbot: {
+      badge: "AI सुरक्षा सहायक",
+      title: "कवच AI सुरक्षा सहायक",
+      subtitle:
+        "साइबर सुरक्षा के सवाल पूछें, संदिग्ध ईमेल की जांच करें, या 1M-पैरामीटर स्थानीय न्यूरल मॉडल के साथ अभ्यास करें।",
+      chatTab: "AI सुरक्षा चैट",
+      analyzerTab: "फ़िशिंग विश्लेषक",
+      newChat: "नया चैट",
+      onlineBadge: "1.34M पैरामीटर • 100% स्थानीय",
+      engineActive: "स्थानीय न्यूरल इंजन सक्रिय",
+      engineOffline: "स्थानीय इंजन बंद है ('py app.py' चलाएं)",
+      inputPlaceholder: "साइबर सुरक्षा सवाल पूछें, या संदिग्ध ईमेल टेक्स्ट लिखें...",
+      inspectorPlaceholder: "संदिग्ध ईमेल, संदेश या लिंक का टेक्स्ट यहाँ पेस्ट करें...",
+      analyzeBtn: "खतरे की जांच करें",
+      riskScore: "जोखिम मूल्यांकन स्कोर",
+      detectedRedFlags: "पहचाने गए लाल झंडे व खतरे के संकेत",
+      verdict: "निर्णय व सुरक्षा सलाह",
+      noFlags: "कोई स्पष्ट फ़िशिंग संकेत नहीं मिला। हमेशा अनजान भुगतान या लॉगिन अनुरोधों की पुष्टि करें।",
+      copy: "कॉपी",
+      copied: "कॉपी हुआ!",
+      tryQuiz: "साइबर क्विज़ खेलें",
+      quickPrompts: [
+        { label: "फ़िशिंग ईमेल कैसे पहचानें?", text: "फ़िशिंग ईमेल की पहचान कैसे करें और इसके मुख्य लक्षण क्या हैं?" },
+        { label: "संदिग्ध लिंक पर क्लिक कर दिया!", text: "मैंने एक संदिग्ध लिंक पर क्लिक कर दिया है और पासवर्ड भर दिया, अब क्या करूँ?" },
+        { label: "UPI PIN सुरक्षा नियम", text: "UPI PIN और QR कोड धोखाधड़ी से बचने के क्या नियम हैं?" },
+        { label: "साइबर क्विज़ खेलें", text: "quiz" },
+        { label: "पासकीज़ और MFA", text: "मल्टी-फैक्टर प्रमाणीकरण और पासकीज़ खातों को कैसे सुरक्षित रखते हैं?" }
+      ]
+    },
+
   },
 };
 
