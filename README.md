@@ -125,6 +125,17 @@ flowchart TD
 
 ```text
 Kavach-Cybersecurity-Platform/
+├── CyberBot-main/          # 1M Parameter Local AI Neural Engine & Backend
+│   ├── ML/                 # PyTorch KavachNet1M architecture, weights & tokenizer
+│   │   ├── weights/        # kavach_net_1m.pt (5.3 MB), vocab.json, embeddings.json
+│   │   ├── model.py        # ~1.34M parameter deep learning model
+│   │   ├── tokenizer.py    # Bilingual subword tokenizer with typo normalization
+│   │   ├── train.py        # Training pipeline (99.89% intent accuracy)
+│   │   └── inference.py    # Local CPU inference engine (<15ms latency)
+│   ├── dataset/            # 41 cybersecurity intents & CTDAPD network telemetry
+│   ├── app.py              # Flask REST API with CORS support
+│   ├── requirements.txt    # Python backend dependencies
+│   └── test_backend.py     # Automated backend & AI test suite
 ├── public/                 # Static assets, icons, video thumbnails
 │   ├── thumbnails/         # Module preview images
 │   ├── favicon.svg
@@ -192,23 +203,28 @@ http://localhost:5173
 
 To enable live AI inference for the `/chatbot` page:
 
-1. Navigate to the `CyberBot-main` directory:
+1. Open a new terminal and navigate to the integrated `CyberBot-main` directory:
    ```powershell
-   cd "../CyberBot-main"
+   cd CyberBot-main
    ```
 
-2. Run the automated test suite to verify the model:
+2. Install backend dependencies (first time only):
+   ```powershell
+   pip install -r requirements.txt
+   ```
+
+3. Run the automated test suite to verify the model:
    ```powershell
    py test_backend.py
    ```
 
-3. Launch the local AI server:
+4. Launch the local AI server:
    ```powershell
    py app.py
    ```
    *(The AI engine starts on `http://127.0.0.1:5000`)*
 
-4. Return to your browser and click **AI Chatbot** in the navigation bar to start chatting with **Kavach-Net-1M**!
+5. Return to your browser and click **AI Chatbot** in the navigation bar to start chatting with **Kavach-Net-1M**!
 
 ---
 
